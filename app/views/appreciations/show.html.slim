@@ -1,2 +1,9 @@
 .card.large
   .appreciation= @appreciation
+
+.right
+  p
+    ' Share this url:
+    = link_to appreciation_url( @appreciation )
+  p
+    ' Facebook and email sharing coming soon!
