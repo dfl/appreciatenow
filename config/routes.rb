@@ -4,5 +4,5 @@ AppreciateNow::Application.routes.draw do
   match "random", :to => "appreciations#random"
   match ":id", :to => "appreciations#show"
 
-  root :to => 'appreciations#index'
+  root :to => 'appreciations#random'
 end
