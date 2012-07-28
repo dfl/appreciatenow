@@ -14,7 +14,7 @@ Appreciation.delete_all
   "=those things you consider as faults", "voice", "how much you love me", "=you— all of you",
   "tenderness", "smile", "the light behind your eyes", "farts", "vulnerability", "dirty mind",
   "smell", "smooth skin", "the gap between your teeth", "touch", "grace", "the way you listen so deeply",
-  "gifts", "generosity"
+  "gifts", "generosity", "the way you hold me"
 ].each{|a| Appreciation.fast_create(a) }
 
 # Appreciation.new(what: " ").save(validation:false)
