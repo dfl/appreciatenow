@@ -1,0 +1,31 @@
+// Place all the styles related to the Appreciations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.card { 
+	float: left;
+	margin: 0 1em 1em 0;
+	font-family: Papyrus, fantasy;
+	border: 1px solid gray;
+  text-align: center;
+}
+
+.large.card { 
+	font-size: 200%;
+}
+
+a.card { text-decoration: none; color: inherit;}
+a.card:hover { cursor: pointer; border-color: black; }
+
+.appreciation {
+	padding: 1em;
+	width: 12em;
+	height: 7em;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+#new_appreciation {
+	width: 14em;	
+}

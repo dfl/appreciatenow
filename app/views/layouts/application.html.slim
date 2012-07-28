@@ -1,0 +1,21 @@
+doctype 5
+html
+  head
+    title Appreciate Now
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  body
+    #header
+      = link_to "browse", root_path
+      = pipe
+      = link_to "random", random_path
+      = pipe
+      = link_to "create", new_appreciation_path
+
+    = yield
+
+    #footer.clear
+      br/
+      |&copy; 2012 Appreciate Now 

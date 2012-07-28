@@ -1,0 +1,7 @@
+= render "shared/form_errors", :object => @appreciation
+
+= form_for @appreciation, :html => {:class => "card"} do |f|
+
+  ' I appreciate
+  = f.text_field :what
+  = f.submit "create"

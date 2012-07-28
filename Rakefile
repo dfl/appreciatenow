@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Appreciatenow::Application.load_tasks
+AppreciateNow::Application.load_tasks
