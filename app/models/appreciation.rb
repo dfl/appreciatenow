@@ -18,10 +18,10 @@ class Appreciation < ActiveRecord::Base
     if what[0] == "="
       what = what[1..-1]
     else
-      what = "#{'your ' unless what =~ /^the/}#{what}"
+      what = "#{'your ' unless what =~ /^(the|how|what|when)\s/}#{what}"
     end
     p what
-    create! what: what
+    find_or_create_by_what what
   end
   
   

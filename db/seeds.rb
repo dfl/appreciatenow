@@ -1,20 +1,16 @@
 # encoding: utf-8
 
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Appreciation.delete_all
+# Appreciation.delete_all
 
 [ 
   "=those things you consider as faults", "voice", "how much you love me", "=you— all of you",
-  "tenderness", "smile", "the light behind your eyes", "farts", "vulnerability", "dirty mind",
+  "tenderness", "smile!", "inside light shining through your eyes", "farts", "vulnerability", "dirty mind",
   "smell", "smooth skin", "the gap between your teeth", "touch", "grace", "the way you listen so deeply",
-  "gifts", "generosity", "the way you hold me"
+  "gifts", "generosity", "the way you hold me", "strength", "=when you say you're sorry", "outrageousness",
+  "sense of adventure", "forgiveness", "uniqueness", "spirit", "realness", "how goofy you can be", "openness",
+  "=you just because", "how hard you try", "you in my life", "mystery", "what a great friend you are",
+  "how deeply you care", "shining light", "the joy in your heart", "how wise you are and how you always give ideas",
+  "how scared you are sometimes", "great hugs", "dreams", "when you listen to me"
 ].each{|a| Appreciation.fast_create(a) }
 
 # Appreciation.new(what: " ").save(validation:false)
