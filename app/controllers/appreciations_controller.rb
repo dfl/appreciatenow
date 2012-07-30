@@ -1,7 +1,7 @@
 class AppreciationsController < ApplicationController
 
   def index
-    @appreciations = Appreciation.order("random()")
+    @appreciations = Appreciation.all #.order("random()")
   end
   
   def show
