@@ -26,3 +26,5 @@
 span.pipe { color: #999; margin: 0 3px; }
 
 body { min-width: 1000px; overflow: scroll;}
+
+.right { float: right; }

@@ -1,0 +1,7 @@
+share by FB, email (anonymous unless member?)
+user signup
+only members can create?
+customize show (css: color and font)
+moderator approval
+vortex display (carousel / scatter)
+Graditude diary (public/private)

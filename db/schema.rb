@@ -16,10 +16,11 @@ ActiveRecord::Schema.define(:version => 20120727232939) do
   create_table "appreciations", :force => true do |t|
     t.string   "what"
     t.integer  "share_count"
-    t.datetime "created_at",         :null => false
+    t.datetime "created_at",                            :null => false
     t.datetime "approved_at"
     t.integer  "created_by_user_id"
-    t.datetime "updated_at",         :null => false
+    t.boolean  "approved",           :default => false
+    t.datetime "updated_at",                            :null => false
   end
 
 end

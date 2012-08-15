@@ -21,8 +21,11 @@ class Appreciation < ActiveRecord::Base
       what = "#{'your ' unless what =~ /^(the|how|what|when|you)\s/}#{what}"
     end
     p what
-    find_or_create_by_what what
+    find_or_create_by_what_and_approved what, true
   end
   
-  
+  def self.approved val=true
+    where(:approved => val)
+  end
+
 end

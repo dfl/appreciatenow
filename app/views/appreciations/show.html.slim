@@ -1,9 +1,10 @@
 .card.large
   .appreciation= @appreciation
 
-.right
-  p
-    ' Share this url:
-    = link_to appreciation_url( @appreciation )
-  p
-    ' Facebook and email sharing coming soon!
+#social-buttons
+  h2 Share the love!
+  p= appreciation_url( @appreciation )
+    / mail_to(email_address, name = nil, html_options = {})
+  p= link_to facebook_share( appreciation_url( @appreciation ), :class => "share" )
+
+

@@ -6,7 +6,8 @@ html
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
-
+    = opengraph_tags_for @appreciation if @appreciation
+    = yield :head
   body
     #header
       = link_to "browse", appreciations_path
@@ -19,4 +20,10 @@ html
 
     #footer.clear
       br/
-      |&copy; 2012 Appreciate Now - Kim Allen
+      |&copy; 2012 Appreciate Now - Kim Allen &amp; David Lowenfels
+      = facebook_like root_url
+
+    = javascript_tag "$(function(){#{yield :page_ready};\n});"
+
+  #fb-root
+  = javascript_tag render :template => "/shared/social_init.js"

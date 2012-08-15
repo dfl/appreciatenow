@@ -1,7 +1,7 @@
 class AppreciationsController < ApplicationController
 
   def index
-    @appreciations = Appreciation.all #.order("random()")
+    @appreciations = Appreciation.approved.all #.order("random()")
   end
   
   def show
@@ -9,12 +9,12 @@ class AppreciationsController < ApplicationController
   end
   
   def random
-    @appreciation = Appreciation.random
+    @appreciation = Appreciation.approved.random
     render :show
   end
 
   def new
-    @appreciation = Appreciation.new    
+    @appreciation = Appreciation.new
   end
   
   def create
