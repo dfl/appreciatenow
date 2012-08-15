@@ -15,6 +15,9 @@ html
       = link_to "random", random_path
       = pipe
       = link_to "create", new_appreciation_path
+      - if admin?
+        = pipe
+        = link_to "approve", approvals_path
 
     = yield
 

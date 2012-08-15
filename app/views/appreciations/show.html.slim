@@ -7,4 +7,7 @@
     / mail_to(email_address, name = nil, html_options = {})
   p= link_to facebook_share( appreciation_url( @appreciation ), :class => "share" )
 
+- if admin?
+  br/
+  p#approval= link_to_approve @appreciation
 
