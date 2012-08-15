@@ -1,5 +1,5 @@
 class ApprovalsController < ApplicationController
-  before_filter { redirect_to root_path unless admin? }
+  before_filter :authenticate_admin
 
   def index
     @appreciations = Appreciation.approved(false)
