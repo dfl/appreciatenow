@@ -23,7 +23,7 @@ module ApplicationHelper
     output << opengraph_meta( :site_name, "AppreciateNow.org" )
     output << opengraph_meta( :type, :website )
     output << opengraph_meta( :url, appreciation_url(appreciation) )
-    output << opengraph_meta( :image, root_url + "favicon.ico" )
+    output << opengraph_meta( :image, root_url + "thumbnail.jpg" )
     output << opengraph_meta( :title, "I appreciate you!")
     output << opengraph_meta( :description, "Create and share appreciation cards" )
     output.join("\n").html_safe
