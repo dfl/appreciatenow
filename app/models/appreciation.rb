@@ -1,5 +1,5 @@
 class Appreciation < ActiveRecord::Base
-  attr_protected :id
+  # attr_protected :id
   validates_presence_of :what
   validates_uniqueness_of :what
   
